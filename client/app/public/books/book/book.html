@@ -1,0 +1,23 @@
+<div>
+  <div class="book-intro row">
+    <header>
+      <h1>{{book.title}}</h1>
+      <p class="byline">By {{book.author.name}}</p>
+    </header>
+    <div class="book-description">
+      {{book.description}}
+    </div>
+    <div class="book-categories">
+      <p>Categories</p>
+      <p>{{book.genre.category}}</p>
+    </div>
+  </div>
+  <div class="book-content">
+    <h3>Introduction</h3>
+    <div ng-repeat="section in book.introduction">{{section.content}}</div>
+  </div>
+  <div class="book-related books row">
+    <div ng-repeat="related in book.related" book="related" class="large-4 small-12"></div>
+  </div>
+
+</div>

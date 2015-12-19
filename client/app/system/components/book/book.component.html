@@ -1,0 +1,22 @@
+<div class="book column small-12 large-4">
+  <div class="book-wrapper">
+    <div class="book-top" ng-go="books/{{book._id}}"></div>
+    <div class="book-bottom">
+      <div class="book-credits">
+        <div class="book-title" ng-go="books/{{book._id}}">
+          {{book.name}}
+        </div>
+        <div class="book-author">
+          {{book.author.name}}
+        </div>
+      </div>
+      <div class="book-meta row">
+        <span class="book-likes column small-5">
+          <span class="likes-icon"></span>
+          <span>{{book.likes}}</span>
+        </span>
+        <span class="book-published column small-7">{{book.published | datetime}}</span>
+      </div>
+    </div>
+  </div>
+</div>

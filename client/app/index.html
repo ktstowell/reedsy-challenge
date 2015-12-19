@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reedsy</title>
+  <!-- CSS -->
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Angular -->
+    <!-- build:js(client/vendor) vendor.js -->
+    <script src="../vendor/bower/jquery/dist/jquery.js"></script>
+    <script src="../vendor/bower/angular/angular.js"></script>
+    <script src="../vendor/bower/angular-route/angular-route.min.js"></script>
+    <script src="../vendor/bower/angular-resource/angular-resource.min.js"></script>
+    <script src="../vendor/bower/foundation/js/foundation.js"></script>
+    <!-- endbuild -->
+
+    <!-- Reedsy Header -->
+    <header>
+      <h1>Reedsy</h1>
+    </header>
+
+
+    <!-- View loader -->
+    <div ng-view></div>
+
+    <!-- APPLICATION - INJECTION -->
+    <!-- inject:js -->
+    <script src="reedsy.js"></script>
+    <!-- endinject -->
+    <script>
+      // Start responsive SASS framework
+      $(document).foundation();
+    </script>
+</body>
+</html>

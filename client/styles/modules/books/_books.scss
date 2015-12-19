@@ -1,0 +1,47 @@
+.books {
+  .book {
+    margin-bottom: 25px;
+
+    .book-wrapper {
+      @extend .tile;
+      background-color: #fff;
+      width: 90%;
+      min-height: 440px;
+      margin: 0 auto;
+      padding: 8px;
+
+      .book-top {
+        background-color: #f2f2f2;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-image: url(/images/books/book-icon.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        height: 80%;
+        width: 100%;
+      }
+
+      .book-bottom {
+        text-align: left;
+        height: 20%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        font-family: "Source Sans Pro - Regular";
+
+        .book-title {
+          font-family: "Source Sans Pro - Bold";
+        }
+
+        .book-likes {
+          .likes-icon {
+            top: 4px;
+          }
+        }
+
+        .book-published {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
