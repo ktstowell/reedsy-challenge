@@ -45,6 +45,7 @@ echo "*****************************"
 . /vagrant/.env/nginx/init.sh
 . /vagrant/.env/mongo/init.sh
 
+
 echo "*****************************************************"
 echo "ALL DONE - PLEASE SEE README FOR FURTHER INSTRUCTIONS"
 echo "*****************************************************"

@@ -16,5 +16,14 @@ db.runCommand(
     }
 )
 db.books.count()
+db.createUser({
+  user: "reedsy",
+  pwd: "i<3books",
+  roles: [
+    {role: "readWrite", db: "reedsy"}
+  ]
+})
 exit
 EOF
+
+npm install -g mongo-express
