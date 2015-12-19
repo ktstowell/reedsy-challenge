@@ -24,6 +24,7 @@ module.exports = {
 function findBooks(id) {
   var def = q.defer();
 
+  // If and ID is passed, auto-normalize to Object ID
   Books.find((id && {query:{_id: (new Reedsy.DAL.mongodb.objectid(id))}} || {query: {}}))
     .then(function(books) {
       def.resolve(books);
