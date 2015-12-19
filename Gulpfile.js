@@ -115,7 +115,9 @@ function watch(src) {
       if (!err && gulp.tasks[task]) {
         run(task, function () {
           if (config && config.reload) {
-            reload(file.path);
+            setTimeout(function() {
+              reload(file.path);
+            }, 500);
           }
         });
       }
