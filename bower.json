@@ -1,0 +1,25 @@
+{
+  "name": "reedsy-challenge",
+  "description": "Reedsy coding challenge",
+  "main": "index.js",
+  "authors": [
+    "Ken Stowell"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ktstowell/reedsy-challenge",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./client/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.4.8",
+    "foundation": "~5.5.3",
+    "angular-route": "~1.4.8"
+  }
+}
