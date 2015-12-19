@@ -13,16 +13,16 @@
     'Reedsy.Services',
     'Reedsy.Public'
   ]).service('Reedsy', ['Reedsy.Services', 'Reedsy.System', function(Services, System) {
-    window.Reedsy = {
+    return {
       Services: Services,
       System: System
-    };
-
-    return window.Reedsy;
+    }
   }]).config(function($routeProvider) {
     $routeProvider.otherwise({
       redirectTo: '/'
     });
+  }).run(function(Reedsy) {
+    window.Reedsy = Reedsy;
   });
 
   //

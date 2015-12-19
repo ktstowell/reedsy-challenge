@@ -6,7 +6,7 @@
 (function() {
   'use strict';
 
-  angular.module('Reedsy.Public')
+  angular.module('Books.Book')
     .controller('Book.Controller', ['$scope', '$routeParams', 'Reedsy.Services', function($scope, $params, Services) {
       $scope.book = Services.Book.data;
 

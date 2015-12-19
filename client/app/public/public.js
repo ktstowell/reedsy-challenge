@@ -1,16 +1,17 @@
+'use strict';
+
 /***********************************************************************************************************************************************
- * REEDSY PUBLIC - BOOKS - BOOK ROUTE
+ * REEDSY PUBLIC
  ***********************************************************************************************************************************************
  * @description
  */
 (function() {
   'use strict';
 
-  angular.module('Reedsy.Public')
-    .config(function($routeProvider) {
-      $routeProvider.when('/books/:id', {
-        controller: 'Book.Controller',
-        templateUrl: 'public/books/book/book.html'
-      });
-    })
+  angular.module('Reedsy.Public', [
+      'Public.Books'
+    ])
+    .service('Reedsy.Public', [function() {
+      return {};
+    }]);
 })();

@@ -1,14 +1,14 @@
 'use strict';
 
 /***********************************************************************************************************************************************
- * REEDSY PUBLIC - BOOKS CONTROLLLER
+ * REEDSY PUBLIC - BOOKS CONTROLLER
  ***********************************************************************************************************************************************
  * @description
  */
 (function() {
   'use strict';
 
-  angular.module('Reedsy.Public')
+  angular.module('Public.Books')
     .controller('Books.Controller', ['$scope', 'Reedsy.Services', function($scope, Services) {
       $scope.books = Services.Books;
     }]);
