@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-DIR=/vagrant/platform
+DIR=/home/vagrant/reedsy/platform
 BIN=$DIR/server.js
 LOG=/var/log/reedsy.node.log
 PROFILE=/home/vagrant/.profile
 APP=reedsy
 GUI_APP=reedsy.db.gui
-GUI=/vagrant/node_modules/mongo-express/app.js
+GUI=/home/vagrant/reedsy/node_modules/mongo-express/app.js
 
 echo "***************"
 echo "Configuring npm"
@@ -14,8 +14,8 @@ echo "***************"
 mkdir /home/vagrant/.npm-packages
 npm config set prefix /home/vagrant/.npm-packages
 npm install -g gulp grunt grunt-cli bower jshint forever
-ls -la /vagrant/.env
-sudo cp /vagrant/.env/node/.foreverignore /
+ls -la /home/vagrant/reedsy/.env
+sudo cp /home/vagrant/reedsy/.env/node/.foreverignore /
 echo "export PATH=/home/vagrant/.npm-packages/bin:/home/vagrant/.npm-packages/lib:$PATH" >> $PROFILE
 
 cat <<< "

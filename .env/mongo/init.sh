@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-books=$(</vagrant/.env/mongo/books.json)
+books=$(</home/vagrant/reedsy/.env/mongo/books.json)
 
 echo "*************************"
 echo "Creating Reedsy Database"

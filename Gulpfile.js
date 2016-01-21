@@ -32,8 +32,8 @@ var tap = require('gulp-tap');
 //------------------------------------------------------------------------------------------//
 // @description
 var Platform = {},
-  Client = {},
-  System = {};
+    Client = {},
+    System = {};
 
 
 //

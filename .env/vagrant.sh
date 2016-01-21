@@ -41,9 +41,9 @@ echo "Done!"
 echo "*****************************"
 echo "Running Configuration Scripts"
 echo "*****************************"
-. /vagrant/.env/node/init.sh
-. /vagrant/.env/nginx/init.sh
-. /vagrant/.env/mongo/init.sh
+. /home/vagrant/reedsy/.env/node/init.sh
+. /home/vagrant/reedsy/.env/nginx/init.sh
+. /home/vagrant/reedsy/.env/mongo/init.sh
 
 
 echo "*****************************************************"
