@@ -25,5 +25,3 @@ db.createUser({
 })
 exit
 EOF
-
-npm install -g mongo-express

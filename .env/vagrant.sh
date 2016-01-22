@@ -14,7 +14,7 @@ sudo su vagrant << EOF
 echo "**********************"
 echo "Installing node.js 4.*"
 echo "**********************"
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # MONGO DB
@@ -41,10 +41,10 @@ echo "Done!"
 echo "*****************************"
 echo "Running Configuration Scripts"
 echo "*****************************"
-. /home/vagrant/reedsy/.env/node/init.sh
 . /home/vagrant/reedsy/.env/nginx/init.sh
 . /home/vagrant/reedsy/.env/mongo/init.sh
-
+. /home/vagrant/reedsy/.env/node/init.sh
+. /home/vagrant/reedsy/.env/mongo/tools.sh
 
 echo "*****************************************************"
 echo "ALL DONE - PLEASE SEE README FOR FURTHER INSTRUCTIONS"

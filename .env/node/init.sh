@@ -26,7 +26,8 @@ alias server.start=\"forever --uid $APP -o $LOG -e $LOG -a -w --watchDirectory $
 " >> $PROFILE
 
 source /home/vagrant/.profile
-cd $DIR && npm install --no-bin-links && cd ~/
+cd $DIR && npm install --no-bin-links && npm rebuild node-sass --no-bin-links && cd ~/
 sudo chmod -R 777 /var/log
-server.start
+echo "Running forever --uid $APP -o $LOG -e $LOG -a -w --watchDirectory $DIR  start $BIN"
+forever --uid $APP -o $LOG -e $LOG -a -w --watchDirectory $DIR  start $BIN
 forever list
